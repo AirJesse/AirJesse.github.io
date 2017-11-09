@@ -5,8 +5,8 @@
 # Site
 title: 雾狸的blog
 subtitle: 心之所向，素履以往
-description: 弱鸡java程序员一枚
-author: AirJesse
+description: JAVA技术博客By雾狸
+author: 雾狸
 email: me@ljc.im
 language:
 timezone:
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
