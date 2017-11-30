@@ -14,22 +14,22 @@ tags:
 
 如果在方法内部，调用了属于同一个类的其他被@bean的方法，相当于直接获取该bean,这被API文档称为 **inter-bean references**。其内部实际上是每个方法都通过```CGLIB```作了代理。
 
-```
- @Configuration
- public class AppConfig {
-     @Bean
-     public FooService fooService() {
-         return new FooService(fooRepository());
-     }
+{% codeblock lang:java %}
+
+@Configuration
+public class AppConfig {
+	@Bean
+	public FooService fooService() {
+		return new FooService(fooRepository());
+	}
  
-     @Bean
-     public FooRepository fooRepository() {
-         return new JdbcFooRepository(dataSource());
-     }
- 
-     // ...
- }
-```
+	@Bean
+	public FooRepository fooRepository() {
+		return new JdbcFooRepository(dataSource());
+	}
+	// ...
+}
+{% endcodeblock %}
 
 ### 关于@Bean在@Component标注的类中的特性
 API文档中，将@Bean运用在@Component类或普通类中的行为，称为**lite mode**。 这种场景下，@bean标注的方法，实际上可以被视为一个工厂方法.上文所述**inter-bean references**特性在这种场景下并不会生效，即方法本身不会使用CGLIB生成代理。
