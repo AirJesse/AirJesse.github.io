@@ -17,7 +17,6 @@ tags:
 ```
  @Configuration
  public class AppConfig {
- 
      @Bean
      public FooService fooService() {
          return new FooService(fooRepository());
@@ -30,7 +29,6 @@ tags:
  
      // ...
  }
- 
 ```
 
 ### 关于@Bean在@Component标注的类中的特性
