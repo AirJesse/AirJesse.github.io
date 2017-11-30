@@ -15,7 +15,6 @@ tags:
 如果在方法内部，调用了属于同一个类的其他被@bean的方法，相当于直接获取该bean,这被API文档称为 **inter-bean references**。其内部实际上是每个方法都通过```CGLIB```作了代理。
 
 ```
-
  @Configuration
  public class AppConfig {
  
@@ -31,6 +30,7 @@ tags:
  
      // ...
  }
+ 
 ```
 
 ### 关于@Bean在@Component标注的类中的特性
