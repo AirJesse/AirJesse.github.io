@@ -9,6 +9,8 @@ tags:
 但如此设置在实际使用中会出现无法连接的提示。
 随后又有文章中说要在jira的通用设置中打开```remote api calls```,然而在公司所安装的jira(7.3)中并无此设置。
 
+<!--more-->
+
 翻阅Jira官方文档的时候我看到了这个:
 ![image.png](http://upload-images.jianshu.io/upload_images/1336536-efe0a6a166894c19.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
