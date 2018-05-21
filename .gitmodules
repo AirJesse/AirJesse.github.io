@@ -1,0 +1,3 @@
+[submodule "yilia"]
+	path = themes/yilia
+	url = git@github.com:AirJesse/hexo-them
